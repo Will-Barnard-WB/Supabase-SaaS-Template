@@ -24,7 +24,7 @@ export default function Login() {
     const user = loginData.user;
 
     setLoading(false);
-    alert("Login successful!");
+    console.log("Login successful!");
   };
 
   return (

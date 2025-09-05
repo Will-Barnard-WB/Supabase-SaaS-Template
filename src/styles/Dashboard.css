@@ -1,0 +1,55 @@
+/* Full-page flex wrapper */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #121212;      /* dark background */
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;         /* horizontal center */
+  align-items: center;             /* vertical center */
+}
+
+/* Dashboard container */
+.dashboard-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 20px;
+  background-color: #1f1f1f;       /* dark card */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;             /* center content horizontally */
+}
+
+/* Headings */
+h2, h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;            /* cards fill container width */
+  width: 100%;                     /* ensure cards take full container width */
+}
+
+/* Loading state */
+.loading-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #bbbbbb;
+  margin: 20px 0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Subtle pulsing animation */
+@keyframes pulse {
+  0%   { opacity: 0.3; }
+  50%  { opacity: 0.8; }
+  100% { opacity: 0.3; }
+}

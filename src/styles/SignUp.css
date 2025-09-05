@@ -1,0 +1,78 @@
+/* Fullscreen flex wrapper to center container */
+.fullscreen-center {
+    height: 100vh;                 /* full viewport height */
+    display: flex;
+    justify-content: center;       /* horizontal center */
+    align-items: center;           /* vertical center */
+    background-color: #121212;     /* dark background */
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #e0e0e0;
+  }
+  
+  /* Signup form container */
+  .auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 25px;
+    background-color: #1f1f1f;    /* dark card */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Headings */
+  .auth-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Input fields */
+  .auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    font-size: 14px;
+  }
+  
+  /* Placeholder color */
+  .auth-container input::placeholder {
+    color: #999;
+  }
+  
+  /* Error message */
+  .auth-container p {
+    margin: 8px 0;
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  
+  /* Button styling */
+  .auth-container button {
+    width: 100%;                  /* same width as input fields */
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .auth-container button:hover {
+    background-color: #555;
+  }
+  
+  .auth-container button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+  }
+  

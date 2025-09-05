@@ -1,0 +1,30 @@
+/* === GLOBAL STYLES === */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #121212;    /* dark background for entire page */
+    color: #e0e0e0;               /* light text */
+  }
+  
+  /* Flex centering wrapper for all full-page components */
+  .fullscreen-center {
+    display: flex;
+    justify-content: center;      /* horizontal center */
+    align-items: center;          /* vertical center */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    margin: 0.5em 0;
+  }
+  
+  /* Links */
+  a {
+    color: #bb86fc;
+    text-decoration: none;
+  }

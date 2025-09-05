@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import { Link } from "react-router-dom";
-import "../styles/navbar.css";
+import "../styles/NavBar.css";
 
 export default function Navbar({ user }) {
   

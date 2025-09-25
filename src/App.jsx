@@ -10,6 +10,8 @@ import AllUsers from "./pages/AllUsers";
 import ImageUpload from "./pages/ImageUpload";
 import UserImages from "./pages/UserImages";
 
+import "./index.css";
+
 export default function App() {
   const { user } = useAuth();
 
@@ -17,7 +19,7 @@ export default function App() {
     <Router>
       {/* Navbar visible on all pages */}
       <Navbar user={user} />
-
+      <div className = 'main-content'>
       <Routes>
         {/* Home page */}
         <Route 
@@ -48,6 +50,7 @@ export default function App() {
           element={<Navigate to={user ? "/dashboard" : "/"} />}
         />
       </Routes>
+      </div>
     </Router>
   );
 }

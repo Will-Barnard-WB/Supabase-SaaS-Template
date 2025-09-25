@@ -28,3 +28,10 @@ html, body {
     color: #bb86fc;
     text-decoration: none;
   }
+
+  /* Page content */
+.main-content {
+  padding-top: 60px; /* match navbar height */
+  padding-left: 20px; /* optional horizontal spacing */
+  padding-right: 20px;
+}

@@ -1,7 +1,6 @@
 /* src/styles/navbar.css */
 
-.navbar {
-    position: fixed;         /* stays at top */
+.navbar {        /* stays at top */
     top: 0;
     left: 0;
     width: 100%;             /* full width */

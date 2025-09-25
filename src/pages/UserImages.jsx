@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../lib/supabaseClient";
-import "../styles/Dashboard.css";
+import "../styles/UserImages.css";
 
 export default function UserImages({ user }) {
   const [images, setImages] = useState([]);

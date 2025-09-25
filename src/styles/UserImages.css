@@ -1,0 +1,58 @@
+/* UserImages.css */
+
+/* Container for the entire dashboard */
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  /* Heading style */
+  .dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid for images */
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Each image card */
+  .images-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .images-grid div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Images themselves */
+  .images-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Image name/caption */
+  .image-name {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    word-break: break-word;
+    color: #333;
+  }
+  

@@ -24,15 +24,23 @@ export default function UserImages({ user }) {
     }
 
     const imagesWithUrls = await Promise.all(
-      data.map(async (file) => {
-        const { data: urlData } = supabase.storage
-          .from("user-uploads")
-          .createSignedUrl(`${user.id}/${file.name}`, 60);
-        return { ...file, url: urlData?.signedUrl };
-      })
-    );
-
-    setImages(imagesWithUrls);
+        data.map(async (file) => {
+          // Await the signed URL properly
+          const { data: urlData, error: urlError } = await supabase.storage
+            .from("user-uploads")
+            .createSignedUrl(`${user.id}/${file.name}`, 3600); // 1 hour
+      
+          if (urlError) {
+            console.error("Error creating signed URL:", urlError);
+            return null;
+          }
+      
+          return { name: file.name, url: urlData.signedUrl };
+        })
+      );
+      
+      // Remove any nulls in case of errors
+      setImages(imagesWithUrls.filter(Boolean));
   };
 
   useEffect(() => {

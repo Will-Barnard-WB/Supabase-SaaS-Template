@@ -19,13 +19,6 @@ export default function Home() {
           and Supabase for a smooth and responsive experience.
         </p>
 
-        {/* Links/Buttons */}
-        <div className="home-buttons">
-          <Link to="/dashboard" className="btn btn-dashboard">Go to Dashboard</Link>
-          <Link to="/signup" className="btn btn-signup">Sign Up</Link>
-          <Link to="/login" className="btn btn-login">Log In</Link>
-        </div>
-
         {/* Footer Text */}
         <p className="home-footer">© 2025 Will's Website. All rights reserved.</p>
       </div>

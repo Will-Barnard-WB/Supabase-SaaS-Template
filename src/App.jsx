@@ -10,7 +10,7 @@ import AllUsers from "./pages/AllUsers";
 import ImageUpload from "./pages/ImageUpload";
 import UserImages from "./pages/UserImages";
 
-import "./index.css";
+import "./styles/index.css";
 
 export default function App() {
   const { user } = useAuth();

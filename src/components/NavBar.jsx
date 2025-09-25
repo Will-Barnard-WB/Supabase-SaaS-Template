@@ -13,6 +13,9 @@ export default function Navbar({ user }) {
         {user ? (
           <>
             <Link to="/dashboard">Dashboard</Link>
+            <Link to="/allusers">All Users</Link>
+            <Link to="/imageupload">Upload Image</Link>
+            <Link to="/userimages">My Images</Link>
             <Link to="/logout">Logout</Link>
           </>
         ) : (

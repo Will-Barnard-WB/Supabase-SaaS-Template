@@ -6,6 +6,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import Dashboard from "./pages/Dashboard";
+import AllUsers from "./pages/AllUsers.Jsx";
+import ImageUpload from "./pages/ImageUpload";
+import UserImages from "./pages/UserImages";
 
 export default function App() {
   const { user } = useAuth();
@@ -31,10 +34,10 @@ export default function App() {
         />
 
         {/* Dashboard protected route */}
-        <Route
-          path="/dashboard"
-          element={user ? <Dashboard user={user} /> : <Navigate to="/login" />}
-        />
+        <Route path="/dashboard" element={user ? <Dashboard user={user} /> : <Navigate to="/login" />}/>
+        <Route path="/allusers" element={user ? <AllUsers user={user} /> : <Navigate to="/login" />}/>
+        <Route path="/imageupload" element={user ? <ImageUpload user={user} /> : <Navigate to="/login" />}/>
+        <Route path="/userimages" element={user ? <UserImages user={user} /> : <Navigate to="/login" />}/>
 
         {/* Logout page */}
         <Route path="/logout" element={<Logout />} />

@@ -6,7 +6,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import Dashboard from "./pages/Dashboard";
-import AllUsers from "./pages/AllUsers.Jsx";
+import AllUsers from "./pages/AllUsers";
 import ImageUpload from "./pages/ImageUpload";
 import UserImages from "./pages/UserImages";
 

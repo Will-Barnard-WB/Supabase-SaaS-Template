@@ -97,28 +97,32 @@ export default function Dashboard({ user }) {
           : user.email}
       </h2>
 
-      {/* Upload Section */}
-      <div className="upload-section">
-        <h3>Upload Your Image</h3>
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleUpload}
-          disabled={uploading}
-        />
-        {uploading && <p>Uploading...</p>}
-      </div>
+     {/* Upload Section */}
+    <div className="upload-section">
+      <h3>Upload Your Image</h3>
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleUpload}
+        disabled={uploading}
+      />
+      {uploading && <p>Uploading...</p>}
+    </div>
 
-      {/* User's Images */}
-      <div className="user-images">
-        <h3>Your Uploaded Images</h3>
-        {images.length === 0 && <p>No images uploaded yet.</p>}
-        <div className="images-grid">
-          {images.map((img) => (
-            <img key={img.name} src={img.url} alt={img.name} width={150} />
-          ))}
-        </div>
+    {/* User's Images */}
+    <div className="user-images">
+      <h3>Your Uploaded Images</h3>
+      {images.length === 0 && <p>No images uploaded yet.</p>}
+      <div className="images-grid">
+        {images.map((img) => (
+          <div key={img.name}>
+            <img src={img.url} alt={img.name} />
+            <div className="image-name">{img.name}</div>
+          </div>
+        ))}
       </div>
+    </div>
+
 
       {/* All Users */}
       <h3>All Users</h3>
